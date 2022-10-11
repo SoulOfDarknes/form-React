@@ -1,0 +1,8 @@
+@import 'reset-css';
+@import '../styles/var.scss';
+
+body {
+    width: 1440px;
+    height: 1128px;
+    background-color: $background-color;
+}
