@@ -12,9 +12,11 @@ function App() {
         <Forma />
         <Map />
       </div>
-      <div className="App__footer">
+      <div>
         <Footer />
+
       </div>
+
     </div>
 
   );
