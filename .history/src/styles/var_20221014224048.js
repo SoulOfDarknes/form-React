@@ -1,6 +1,7 @@
 
 export const color = {
     text: "#3E3E3E",
+    borderShadow: "",
     border: "#D8D8D8",
     borderLigth: "#a8b86b",
     borderError: "#BF310C",

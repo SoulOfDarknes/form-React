@@ -1,6 +1,7 @@
 @import '../styles/var.scss';
 
 .App {
+    position: relative;
     &__container {
         
             display: flex;

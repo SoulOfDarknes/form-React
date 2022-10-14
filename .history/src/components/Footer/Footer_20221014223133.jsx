@@ -5,42 +5,46 @@ import {
   Footers,
   Pink,
   Social,
-  Sidebar,
 } from "./styles";
 
+import "../Footer/Footer.scss";
 
 function Footer () {
     return (
        <Footers>
         <Pink>
-          <div>
+          <div className="footer__pink-smile">
             <img src="img/pink_smile_footer.png" alt="pink-smile" />
           </div>
           </Pink>
+        
         <Social>
           <a target="_blank" rel="noreferrer"
-            href="https://www.linkedin.com/in/vasyl-pylypenko-58956a225/"   >
+            href="https://www.linkedin.com/in/vasyl-pylypenko-58956a225/"  className="footer__sicial-icon" >
             <FontAwesomeIcon  icon={faLinkedin} />
           </a>
           <a target="_blank" rel="noreferrer"
-            href="https://twitter.com/" >
+            href="https://twitter.com/" className="footer__sicial-icon">
             <FontAwesomeIcon icon={faTwitter} />
           </a>
           <a target="_blank" rel="noreferrer"
-            href="https://www.facebook.com/profile.php?id=100000396959240" >
+            href="https://www.facebook.com/profile.php?id=100000396959240" className="footer__sicial-icon">
             <FontAwesomeIcon icon={faFacebook} />
           </a>
           <a target="_blank" rel="noreferrer"
-            href="https://www.pinterest.com/" >
+            href="https://www.pinterest.com/" className="footer__sicial-icon">
             <FontAwesomeIcon icon={faPinterest} />
           </a>
           </Social>
-        <Sidebar>
-          <div >
+        
+        <div className="footer__smiles">
+          <div className="footer__smiles-first">
+
           </div>
-          <div >
+          <div className="footer__smiles-second">
+
           </div>
-        </Sidebar>
+        </div>
       </Footers>
     )
 }

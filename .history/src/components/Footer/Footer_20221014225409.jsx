@@ -8,12 +8,13 @@ import {
   Sidebar,
 } from "./styles";
 
+import "../Footer/Footer.scss";
 
 function Footer () {
     return (
        <Footers>
         <Pink>
-          <div>
+          <div className="footer__pink-smile">
             <img src="img/pink_smile_footer.png" alt="pink-smile" />
           </div>
           </Pink>

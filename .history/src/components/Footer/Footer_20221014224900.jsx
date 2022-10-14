@@ -5,15 +5,15 @@ import {
   Footers,
   Pink,
   Social,
-  Sidebar,
 } from "./styles";
 
+import "../Footer/Footer.scss";
 
 function Footer () {
     return (
        <Footers>
         <Pink>
-          <div>
+          <div className="footer__pink-smile">
             <img src="img/pink_smile_footer.png" alt="pink-smile" />
           </div>
           </Pink>
@@ -36,9 +36,11 @@ function Footer () {
           </a>
           </Social>
         <Sidebar>
-          <div >
+          <div className="footer__smiles-first">
+
           </div>
-          <div >
+          <div className="footer__smiles-second">
+
           </div>
         </Sidebar>
       </Footers>

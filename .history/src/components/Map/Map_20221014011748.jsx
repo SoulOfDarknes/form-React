@@ -1,6 +1,6 @@
 import { useMemo} from 'react';
 import { GoogleMap, useLoadScript, MarkerF } from '@react-google-maps/api';
-import '../Map/map.scss';
+import '../Map/map.css';
 
 
 const Map = () => {
