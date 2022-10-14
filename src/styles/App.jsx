@@ -7,3 +7,8 @@ export const Container = styled.div`
     background-color: ${color.background};
     height: 90vh;
 `;
+
+export const Main = styled.div`
+    width: 100vw;
+    height: 100vh;
+`

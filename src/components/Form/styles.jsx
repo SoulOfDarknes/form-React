@@ -9,7 +9,7 @@ export const Container = styled.div`
   color: ${color.text};
   width: 30vw;
   height: 50%;
-  margin: 10vh 5vw 0 15vh;
+  margin: 12vh 5vw 0 15vh;
 
   @media screen and (max-width: 1024px) {
     margin: 10rem;
@@ -33,7 +33,7 @@ export const Input = styled(Field)`
   padding: 1rem 2rem;
   border: 1px solid ${color.border};
   border-radius: 1rem;
-  width: 30vw;
+  width: 20vw;
   margin-top: 0.8rem;
   ${({ valid }) =>
     valid &&

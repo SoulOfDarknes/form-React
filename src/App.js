@@ -1,21 +1,19 @@
 import Footer from "./components/Footer/Footer";
 import Forma from "./components/Form/Form";
 import Map from "./components/Map/Map";
-import { Container } from "./styles/App"
+import { Container, Main } from "./styles/App"
 
 
 
 function App() {
   return (
-    <div>
+    <Main>
       <Container>
         <Forma />
         <Map />
       </Container>
-      <div>
-        <Footer />
-      </div>
-    </div>
+      <Footer />
+    </Main>
 
   );
 }
