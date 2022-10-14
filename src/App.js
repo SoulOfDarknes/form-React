@@ -1,18 +1,18 @@
-import "../src/styles/main.scss";
 import Footer from "./components/Footer/Footer";
 import Forma from "./components/Form/Form";
 import Map from "./components/Map/Map";
+import { Container } from "./styles/App"
 
-import "./styles/App.scss"
+
 
 function App() {
   return (
-    <div className="App">
-      <div className="App__container">
+    <div>
+      <Container>
         <Forma />
         <Map />
-      </div>
-      <div className="App__footer">
+      </Container>
+      <div>
         <Footer />
       </div>
     </div>

@@ -4,13 +4,13 @@ import styled from "styled-components";
 export const Footers = styled.div`
     display: flex;
     justify-content: space-between;
-    background-color: $footer-color;
+    background-color: ${color.footer};
     height: 15vh;
-    border: 1px solid $border;
+    border-top: 1px solid ${color.footerBorder};
 `;
 
 export const Pink = styled.div`
-    width: 24%;
+    margin-left: 4rem;
     height: 100%;
     & img {
         width: 11rem;
@@ -34,12 +34,13 @@ export const Sidebar = styled.div`
     display: flex;
     & img:nth-child(1) {
         width: 4rem;
-        height: 6rem;
+        height: 5rem;
         margin-right: 4rem;
     }
-    & img:nth-child(1) {
-
-    }
-`;
+    & img:nth-child(2) {
+        padding-top: 1.5rem;
+        width: 5rem;
+        height: 6rem;
+    }`;
 
 

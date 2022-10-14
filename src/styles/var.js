@@ -1,5 +1,6 @@
 
 export const color = {
+    background: "#FFFFFF",
     text: "#3E3E3E",
     border: "#D8D8D8",
     borderLigth: "#a8b86b",
@@ -9,5 +10,7 @@ export const color = {
     buttonText: "#FFFFFF",
     wornigText: "#ff010c",
     icon: "#696969",
+    footer: "#FAFAFA",
+    footerBorder: "#D8D8D8",
 }
 

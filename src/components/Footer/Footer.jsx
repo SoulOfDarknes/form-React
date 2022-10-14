@@ -17,19 +17,19 @@ function Footer () {
           </Pink>
         <Social>
           <a target="_blank" rel="noreferrer"
-            href="https://www.linkedin.com/in/vasyl-pylypenko-58956a225/"   >
+            href="https://www.linkedin.com/in/vasyl-pylypenko-58956a225/">
             <FontAwesomeIcon  icon={faLinkedin} />
           </a>
           <a target="_blank" rel="noreferrer"
-            href="https://twitter.com/" >
+            href="https://twitter.com/">
             <FontAwesomeIcon icon={faTwitter} />
           </a>
           <a target="_blank" rel="noreferrer"
-            href="https://www.facebook.com/profile.php?id=100000396959240" >
+            href="https://www.facebook.com/profile.php?id=100000396959240">
             <FontAwesomeIcon icon={faFacebook} />
           </a>
           <a target="_blank" rel="noreferrer"
-            href="https://www.pinterest.com/" >
+            href="https://www.pinterest.com/">
             <FontAwesomeIcon icon={faPinterest} />
           </a>
           </Social>
