@@ -13,9 +13,7 @@ function Footer () {
     return (
        <Footers>
         <Pink>
-          <div>
             <img src="img/pink_smile_footer.png" alt="pink-smile" />
-          </div>
           </Pink>
         <Social>
           <a target="_blank" rel="noreferrer"
@@ -36,10 +34,8 @@ function Footer () {
           </a>
           </Social>
         <Sidebar>
-          <div >
-          </div>
-          <div >
-          </div>
+            <img src="img/green_smile.png" alt="green-smile" />
+            <img src="img/yellow_smile_footer.png" alt="yellow-smile" />
         </Sidebar>
       </Footers>
     )

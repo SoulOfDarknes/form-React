@@ -7,13 +7,15 @@ export const Footers = styled.div`
     background-color: $footer-color;
     height: 15vh;
     border: 1px solid $border;
-
 `;
 
 export const Pink = styled.div`
     width: 24%;
     height: 100%;
-    background-color: pink;
+    & img {
+        width: 11rem;
+        float: right;
+    }
 `;
 
 export const Social = styled.div`
@@ -28,11 +30,15 @@ export const Social = styled.div`
 }`;
 
 export const Sidebar = styled.div`
-    width: 24%;
     height: 100%;
     display: flex;
-    & div {
-        width: 50%;
+    & img:nth-child(1) {
+        width: 4rem;
+        height: 6rem;
+        margin-right: 4rem;
+    }
+    & img:nth-child(1) {
+
     }
 `;
 
