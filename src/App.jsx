@@ -1,7 +1,8 @@
 import Footer from "./components/Footer/Footer";
 import Forma from "./components/Form/Form";
 import Map from "./components/Map/Map";
-import { Container, Main } from "./styles/App"
+import { Container, Main, Cloud } from "./styles/App"
+// import { ReactComponent as Cloud } from "../public/img/cloud.svg";
 
 
 
@@ -16,7 +17,6 @@ function App() {
       </Container>
       <Footer />
     </Main>
-
   );
 }
 

@@ -11,13 +11,14 @@ export const Container = styled.div`
   height: 50%;
   margin: 12vh 5vw 0 15vh;
 
-  @media screen and (max-width: 1024px) {
-    margin: 10rem;
-    max-width: 55rem;
+  @media (max-width: 1024px) {
+    margin: 10rem 10rem 10rem 0;
+    width: 30rem
   }
 
-  @media screen and (max-width: 425px) {
-    margin: 10rem;
+  @media (max-width: 425px) {
+    margin: 10rem 5rem 10rem 15rem;
+    width: 20rem;
   }
 `;
 
@@ -26,6 +27,11 @@ export const Label = styled.label`
   padding: 0.5rem 0;
   font-size: 2rem;
   margin-bottom: 1rem;
+
+    @media (max-width: 425px) {
+    width: 20rem;
+  }
+
 `;
 
 export const Input = styled(Field)`
@@ -33,7 +39,7 @@ export const Input = styled(Field)`
   padding: 1rem 2rem;
   border: 1px solid ${color.border};
   border-radius: 1rem;
-  width: 20vw;
+  width: 100%;
   margin-top: 0.8rem;
   ${({ valid }) =>
     valid &&
@@ -76,7 +82,7 @@ export const Button = styled.button`
   font-size: 0.8rem;
   color: ${color.buttonText};
   padding: 1.5rem 3rem;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   border: 1px solid ${darken(0.2, (color.borderButton))};
   border-radius: 50rem;
   background-color: ${color.borderButton};

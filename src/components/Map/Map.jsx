@@ -1,5 +1,6 @@
 import { useMemo} from "react";
 import { GoogleMap, useLoadScript, MarkerF } from "@react-google-maps/api";
+import { Maps, Image } from "./styles";
 
 import "../Map/map.scss";
 
@@ -17,11 +18,15 @@ const Map = () => {
   };
 
   return (
-    
+    <Maps>
+      <Image>
+      <img src="img/yellow_smile_down.png" alt="yellow slime on map" />
+      <img src="img/pink_smile.png" alt="yellow slime on map" />
+      </Image>
     <GoogleMap zoom={13} center={center} mapContainerClassName="map">
       <MarkerF key="map" position={center} />
       </GoogleMap>
-    
+    </Maps>
   )
 };
 

@@ -5,13 +5,13 @@ export const Footers = styled.div`
     display: flex;
     justify-content: space-between;
     background-color: ${color.footer};
-    height: 15vh;
     border-top: 1px solid ${color.footerBorder};
 `;
 
 export const Pink = styled.div`
     margin-left: 4rem;
     height: 100%;
+    
     & img {
         width: 11rem;
         float: right;
@@ -23,6 +23,8 @@ export const Social = styled.div`
     width: 100%;
     display: flex;
     align-items: center;
+    background-color: ${color.footer};
+
     & a {
      display: block;
      color: ${color.icon};
@@ -30,8 +32,13 @@ export const Social = styled.div`
 }`;
 
 export const Sidebar = styled.div`
-    height: 100%;
     display: flex;
+
+    @media (max-width: 425px) {
+    background-color: ${color.footer};
+    border-top: 1px solid ${color.footerBorder};
+    }
+
     & img:nth-child(1) {
         width: 4rem;
         height: 5rem;
