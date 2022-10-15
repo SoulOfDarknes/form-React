@@ -9,7 +9,7 @@ export const Container = styled.div`
   color: ${color.text};
   width: 30vw;
   height: 50%;
-  margin: 12vh 5vw 0 15vh;
+  margin: 12vh 5vw 5rem 15vh;
 
   @media (max-width: 1024px) {
     margin: 10rem 10rem 10rem 0;

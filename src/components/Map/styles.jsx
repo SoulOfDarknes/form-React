@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Maps = styled.div`
-position: relative;
 margin-left: 5rem;
 
       @media  (max-width: 1024px) {
@@ -28,5 +27,21 @@ export const Image = styled.div`
         position: absolute;
         top: 60%;
         z-index: 1;
+         animation: 3s ease 1s normal infinite running rot;
+        @keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
     }
 `
