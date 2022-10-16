@@ -10,10 +10,11 @@ import {
   StyledErrorMessage,
   Success,
 } from "./styles.jsx";
+import { feedback } from "../../actions/feedback.js";
 
 
 
-function Forma() {
+function Forma(props) {
   const [isSuccess, setIsSuccess] = useState(false);
 
   const handleSubmit = async (data) => {
@@ -22,7 +23,7 @@ function Forma() {
       setIsSuccess(true);
     }
     catch (error) {
-      alert('You see some error');
+      console.log(`You see some error ${error}`);
     }
   };
 
@@ -30,8 +31,8 @@ function Forma() {
     name: Yup.string().min(3, "Must have at least 3 characteres").required(),
     email: Yup.string().email().required("E-mail is required"),
     message: Yup.string()
-      .min(10)
-      .max(500, `Can't exceed 500 characters`)
+      .min(10, "Need more then 10 letters")
+      .max(500, "Can't exceed 500 characters")
       .required(),
     });
   
@@ -88,7 +89,7 @@ function Forma() {
                     {errors.message}
                   </StyledErrorMessage>
               ) : null}
-              <Button type="submit" disabled={!isValid}>
+              <Button type="submit" disabled={!isValid} onClick={() => feedback(props.name,props.email,props.message)}>
                 Send message
               </Button>
             </Form>
