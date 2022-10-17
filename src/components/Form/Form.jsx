@@ -16,10 +16,17 @@ import { feedback } from "../../actions/feedback.js";
 
 function Forma(props) {
   const [isSuccess, setIsSuccess] = useState(false);
+  // const [name, setName] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [message, setMessage] = useState("");
+
+  // const dispatch = useDispatch();
+  // const feedback = useSelector((state) => state.feedback);
 
   const handleSubmit = async (data) => {
     console.log(data)
     try {
+      feedback(data.name, data.email, data.message);
       setIsSuccess(true);
     }
     catch (error) {
@@ -67,7 +74,7 @@ function Forma(props) {
                 type="email"
                 name="email"
                 autoComplete="email"
-                placeholder="Your email*"
+                  placeholder="Your email*"
                 valid={touched.email && !errors.email}
                 error={touched.email && errors.email}
                 />
@@ -89,7 +96,7 @@ function Forma(props) {
                     {errors.message}
                   </StyledErrorMessage>
               ) : null}
-              <Button type="submit" disabled={!isValid} onClick={() => feedback(props.name,props.email,props.message)}>
+              <Button type="submit" disabled={!isValid} >
                 Send message
               </Button>
             </Form>
