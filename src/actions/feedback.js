@@ -9,7 +9,7 @@ export const feedback = async (name, email, message) => {
         })
         alert(response.data.message)
     } catch (error) {
-        alert(error)
+        alert(error.response.data.message)
     }
 
 }

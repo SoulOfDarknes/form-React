@@ -48,7 +48,7 @@ function Forma(props) {
           }}
         >
           {({ errors, touched, handleSubmit, isValid }) => (
-            <Form name="contact" method="post" onSubmit={handleSubmit}>
+            <Form name="contact" method="post" onSubmit={handleSubmit} >
               <Label htmlFor="title">Reach out to us!</Label>
                 <Input
                 id="title"
