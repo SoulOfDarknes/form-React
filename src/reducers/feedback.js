@@ -8,6 +8,6 @@ export default function feedbackReducer(state = defaultState, action) {
     switch (action.type) {
 
         default:
-            return state
+            return state;
     }
 }

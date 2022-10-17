@@ -14,14 +14,8 @@ import { feedback } from "../../actions/feedback.js";
 
 
 
-function Forma(props) {
+function Forma() {
   const [isSuccess, setIsSuccess] = useState(false);
-  // const [name, setName] = useState("");
-  // const [email, setEmail] = useState("");
-  // const [message, setMessage] = useState("");
-
-  // const dispatch = useDispatch();
-  // const feedback = useSelector((state) => state.feedback);
 
   const handleSubmit = async (data) => {
     console.log(data)
